@@ -1,0 +1,6 @@
+framework module Pods_MessageMyFriendsTests {
+  umbrella header "Pods-MessageMyFriendsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
