@@ -17,6 +17,8 @@
 		8C5442AF2235EDDB00E2727D /* MessageMyFriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442AE2235EDDB00E2727D /* MessageMyFriendsTests.swift */; };
 		8C5442BA2235EDDB00E2727D /* MessageMyFriendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442B92235EDDB00E2727D /* MessageMyFriendsUITests.swift */; };
 		8C5442CD2235FEB800E2727D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C5442CC2235FEB800E2727D /* GoogleService-Info.plist */; };
+		8C5442DB2237326300E2727D /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442DA2237326300E2727D /* LaunchVC.swift */; };
+		8C5442DD2237327400E2727D /* LaunchVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442DC2237327400E2727D /* LaunchVC-UI.swift */; };
 		BE329111C9F82A1C48F90F67 /* Pods_MessageMyFriendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		8C5442BB2235EDDB00E2727D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C5442CB2235FC1500E2727D /* MessageMyFriends.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessageMyFriends.entitlements; sourceTree = "<group>"; };
 		8C5442CC2235FEB800E2727D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C5442DA2237326300E2727D /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
+		8C5442DC2237327400E2727D /* LaunchVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchVC-UI.swift"; sourceTree = "<group>"; };
 		9B1CD79493F43E3F60214090 /* Pods_MessageMyFriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A437B36F44DA4AC096D4E /* Pods-MessageMyFriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriendsTests.release.xcconfig"; path = "Target Support Files/Pods-MessageMyFriendsTests/Pods-MessageMyFriendsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,11 +131,15 @@
 		8C5442982235EDDA00E2727D /* MessageMyFriends */ = {
 			isa = PBXGroup;
 			children = (
+				8C5442D3223731A600E2727D /* Helpers */,
+				8C5442D2223731A100E2727D /* Resources */,
+				8C5442D12237319900E2727D /* Clients */,
+				8C5442D02237319500E2727D /* Models */,
+				8C5442CF2237318F00E2727D /* Views */,
+				8C5442CE2237318500E2727D /* Controllers */,
 				8C5442CB2235FC1500E2727D /* MessageMyFriends.entitlements */,
 				8C5442992235EDDA00E2727D /* AppDelegate.swift */,
-				8C54429B2235EDDA00E2727D /* ViewController.swift */,
 				8C54429D2235EDDA00E2727D /* Main.storyboard */,
-				8C5442A02235EDDB00E2727D /* Assets.xcassets */,
 				8C5442A22235EDDB00E2727D /* LaunchScreen.storyboard */,
 				8C5442A52235EDDB00E2727D /* Info.plist */,
 				8C5442CC2235FEB800E2727D /* GoogleService-Info.plist */,
@@ -155,6 +163,100 @@
 				8C5442BB2235EDDB00E2727D /* Info.plist */,
 			);
 			path = MessageMyFriendsUITests;
+			sourceTree = "<group>";
+		};
+		8C5442CE2237318500E2727D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8C5442D62237320700E2727D /* SignupVC */,
+				8C5442D92237323000E2727D /* ChatVC */,
+				8C5442D82237322900E2727D /* AddFriendVC */,
+				8C5442D72237322200E2727D /* HomeVC */,
+				8C5442D4223731F100E2727D /* LaunchVC */,
+				8C5442D5223731F700E2727D /* LoginVC */,
+				8C54429B2235EDDA00E2727D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8C5442CF2237318F00E2727D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8C5442D02237319500E2727D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8C5442D12237319900E2727D /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		8C5442D2223731A100E2727D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8C5442A02235EDDB00E2727D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8C5442D3223731A600E2727D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8C5442D4223731F100E2727D /* LaunchVC */ = {
+			isa = PBXGroup;
+			children = (
+				8C5442DA2237326300E2727D /* LaunchVC.swift */,
+				8C5442DC2237327400E2727D /* LaunchVC-UI.swift */,
+			);
+			path = LaunchVC;
+			sourceTree = "<group>";
+		};
+		8C5442D5223731F700E2727D /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginVC;
+			sourceTree = "<group>";
+		};
+		8C5442D62237320700E2727D /* SignupVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignupVC;
+			sourceTree = "<group>";
+		};
+		8C5442D72237322200E2727D /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		8C5442D82237322900E2727D /* AddFriendVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddFriendVC;
+			sourceTree = "<group>";
+		};
+		8C5442D92237323000E2727D /* ChatVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ChatVC;
 			sourceTree = "<group>";
 		};
 		A127541D965C48F8210F1797 /* Pods */ = {
@@ -412,6 +514,8 @@
 			files = (
 				8C54429C2235EDDA00E2727D /* ViewController.swift in Sources */,
 				8C54429A2235EDDA00E2727D /* AppDelegate.swift in Sources */,
+				8C5442DB2237326300E2727D /* LaunchVC.swift in Sources */,
+				8C5442DD2237327400E2727D /* LaunchVC-UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
