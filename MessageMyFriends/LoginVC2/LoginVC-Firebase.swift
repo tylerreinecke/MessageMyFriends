@@ -68,7 +68,7 @@ extension LoginVC {
         actionCodeSettings.url = URL(string: "https://messagemyfriends-9b28f.firebaseapp.com")
         actionCodeSettings.handleCodeInApp = true
         actionCodeSettings.setIOSBundleID(Bundle.main.bundleIdentifier!)
-        actionCodeSettings.dynamicLinkDomain = "https://anity.page.link/apple-app-site-association"
+        actionCodeSettings.dynamicLinkDomain = "anity.page.link"
         Auth.auth().sendSignInLink(toEmail:email, actionCodeSettings: actionCodeSettings) { error in
             if let error = error {
                 self.userError(1)

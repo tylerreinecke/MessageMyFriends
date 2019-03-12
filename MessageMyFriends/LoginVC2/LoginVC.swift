@@ -15,6 +15,8 @@ class LoginVC: UIViewController {
     var emailTextField: UITextField!
     var signupButton: UIButton!
     
+    var link: String!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
