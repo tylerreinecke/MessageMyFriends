@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 
 class Friend: NSObject, MKAnnotation {
+    
     var coordinate : CLLocationCoordinate2D
     var title : String?
     var subtitle : String?
@@ -21,7 +22,7 @@ class Friend: NSObject, MKAnnotation {
     var coordinates : CLLocationCoordinate2D!
 
     override init() {
-        
+        self.coordinate = coordinates
     }
     
 }

@@ -29,9 +29,9 @@
 		8C5442EE22377D3800E2727D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442ED22377D3800E2727D /* ChatVC.swift */; };
 		8C5442F022377D4700E2727D /* AddFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442EF22377D4700E2727D /* AddFriendVC.swift */; };
 		8C5442F222377D6400E2727D /* ConfigUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442F122377D6400E2727D /* ConfigUserVC.swift */; };
-		8C5442FB2237847900E2727D /* LoginVC-Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442F82237847900E2727D /* LoginVC-Firebase.swift */; };
-		8C5442FC2237847900E2727D /* LoginVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442F92237847900E2727D /* LoginVC-UI.swift */; };
-		8C5442FD2237847900E2727D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442FA2237847900E2727D /* LoginVC.swift */; };
+		8C54430B22379B7200E2727D /* LoginVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430822379B7200E2727D /* LoginVC-UI.swift */; };
+		8C54430C22379B7200E2727D /* LoginVC-Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430922379B7200E2727D /* LoginVC-Firebase.swift */; };
+		8C54430D22379B7200E2727D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430A22379B7200E2727D /* LoginVC.swift */; };
 		BE329111C9F82A1C48F90F67 /* Pods_MessageMyFriendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,9 +84,9 @@
 		8C5442ED22377D3800E2727D /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		8C5442EF22377D4700E2727D /* AddFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendVC.swift; sourceTree = "<group>"; };
 		8C5442F122377D6400E2727D /* ConfigUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUserVC.swift; sourceTree = "<group>"; };
-		8C5442F82237847900E2727D /* LoginVC-Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC-Firebase.swift"; sourceTree = "<group>"; };
-		8C5442F92237847900E2727D /* LoginVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC-UI.swift"; sourceTree = "<group>"; };
-		8C5442FA2237847900E2727D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8C54430822379B7200E2727D /* LoginVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC-UI.swift"; sourceTree = "<group>"; };
+		8C54430922379B7200E2727D /* LoginVC-Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC-Firebase.swift"; sourceTree = "<group>"; };
+		8C54430A22379B7200E2727D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9B1CD79493F43E3F60214090 /* Pods_MessageMyFriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A437B36F44DA4AC096D4E /* Pods-MessageMyFriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriendsTests.release.xcconfig"; path = "Target Support Files/Pods-MessageMyFriendsTests/Pods-MessageMyFriendsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		8C5442982235EDDA00E2727D /* MessageMyFriends */ = {
 			isa = PBXGroup;
 			children = (
-				8C5442F72237846B00E2727D /* LoginVC */,
+				8C54430722379B5A00E2727D /* LoginVC */,
 				8C5442D3223731A600E2727D /* Helpers */,
 				8C5442D2223731A100E2727D /* Resources */,
 				8C5442D12237319900E2727D /* Clients */,
@@ -288,15 +288,15 @@
 			path = ConfigUserVC;
 			sourceTree = "<group>";
 		};
-		8C5442F72237846B00E2727D /* LoginVC */ = {
+		8C54430722379B5A00E2727D /* LoginVC */ = {
 			isa = PBXGroup;
 			children = (
-				8C5442F82237847900E2727D /* LoginVC-Firebase.swift */,
-				8C5442F92237847900E2727D /* LoginVC-UI.swift */,
-				8C5442FA2237847900E2727D /* LoginVC.swift */,
+				8C54430922379B7200E2727D /* LoginVC-Firebase.swift */,
+				8C54430822379B7200E2727D /* LoginVC-UI.swift */,
+				8C54430A22379B7200E2727D /* LoginVC.swift */,
 			);
 			name = LoginVC;
-			path = "New Group";
+			path = LoginVC2;
 			sourceTree = "<group>";
 		};
 		A127541D965C48F8210F1797 /* Pods */ = {
@@ -621,18 +621,18 @@
 				8C5442EB223773D000E2727D /* FriendCell.swift in Sources */,
 				8C54429C2235EDDA00E2727D /* ViewController.swift in Sources */,
 				8C5442F222377D6400E2727D /* ConfigUserVC.swift in Sources */,
-				8C5442FD2237847900E2727D /* LoginVC.swift in Sources */,
 				8C5442E322376E4500E2727D /* HomeVC-MapView.swift in Sources */,
 				8C5442E122376E3200E2727D /* HomeVC-UI.swift in Sources */,
-				8C5442FB2237847900E2727D /* LoginVC-Firebase.swift in Sources */,
 				8C5442E522376E5200E2727D /* HomeVC-TableView.swift in Sources */,
-				8C5442FC2237847900E2727D /* LoginVC-UI.swift in Sources */,
 				8C5442DF22376E2400E2727D /* HomeVC.swift in Sources */,
 				8C5442E92237727400E2727D /* Constants.swift in Sources */,
+				8C54430C22379B7200E2727D /* LoginVC-Firebase.swift in Sources */,
 				8C5442F022377D4700E2727D /* AddFriendVC.swift in Sources */,
 				8C54429A2235EDDA00E2727D /* AppDelegate.swift in Sources */,
+				8C54430D22379B7200E2727D /* LoginVC.swift in Sources */,
 				8C5442E7223770B900E2727D /* Friend.swift in Sources */,
 				8C5442DB2237326300E2727D /* LaunchVC.swift in Sources */,
+				8C54430B22379B7200E2727D /* LoginVC-UI.swift in Sources */,
 				8C5442DD2237327400E2727D /* LaunchVC-UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
