@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension LoginVC {
+extension LoginVC: UITextFieldDelegate {
     func initUI() {
         logoView = UIImageView(frame: CGRect(x: 0, y: 0, width: 400, height: 300))
         logoView.center = CGPoint(x: view.frame.midX, y: 300)
@@ -26,20 +26,46 @@ extension LoginVC {
         emailTextField = UITextField(frame: CGRect(x: view.frame.width/3, y: welcomeLabel.frame.maxY + 20, width: view.frame.width / 1.5, height: 40))
         emailTextField.center = CGPoint(x: view.frame.midX, y: welcomeLabel.frame.maxY + 30)
         emailTextField.placeholder = "Email"
+        emailTextField.delegate = self
         emailTextField.autocapitalizationType = .none
         emailTextField.textAlignment = .center
         emailTextField.backgroundColor = .lightGray
         emailTextField.layer.cornerRadius = 15
         view.addSubview(emailTextField)
         
-        signupButton = UIButton(frame: CGRect(x: view.frame.width/3.5, y: emailTextField.frame.maxY + 50, width: view.frame.width/2, height: 30))
-        signupButton.setTitle("Sign In/ Sign Up", for: .normal)
-        emailTextField.center = CGPoint(x: view.frame.midX, y: emailTextField.frame.maxY + 20)
-        signupButton.backgroundColor = UIColor(red:0.57, green:0.70, blue:0.95, alpha:1.0)
-        signupButton.layer.cornerRadius = 12
-        signupButton.setTitleColor(.white, for: .normal)
-        signupButton.addTarget(self, action: #selector(loginButtonPressed), for: .touchUpInside)
-        view.addSubview(signupButton)
+        sendEmailButton = UIButton(frame: CGRect(x: view.frame.width/3.5, y: emailTextField.frame.maxY + 50, width: view.frame.width/2, height: 30))
+        sendEmailButton.setTitle("Create Account", for: .normal)
+        sendEmailButton.center = CGPoint(x: view.frame.midX, y: emailTextField.frame.maxY + 20)
+        sendEmailButton.backgroundColor = UIColor(red:0.57, green:0.70, blue:0.95, alpha:1.0)
+        sendEmailButton.layer.cornerRadius = 12
+        sendEmailButton.setTitleColor(.white, for: .normal)
+        sendEmailButton.addTarget(self, action: #selector(sendEmailPressed), for: .touchUpInside)
+        view.addSubview(sendEmailButton)
+        
+        signInButton = UIButton(frame: CGRect(x: view.frame.width/3.5, y: sendEmailButton.frame.maxY + 50, width: view.frame.width/2, height: 30))
+        signInButton.setTitle("Sign In", for: .normal)
+        signInButton.center = CGPoint(x: view.frame.midX, y: sendEmailButton.frame.maxY + 20)
+        signInButton.backgroundColor = UIColor(red:0.57, green:0.70, blue:0.95, alpha:1.0)
+        signInButton.layer.cornerRadius = 12
+        signInButton.setTitleColor(.white, for: .normal)
+        signInButton.addTarget(self, action: #selector(didTapSignInWithEmailLink), for: .touchUpInside)
+        view.addSubview(signInButton)
+        
+        addTapDismiss()
 
         }
+    
+    func addTapDismiss() {
+        view.addGestureRecognizer(UITapGestureRecognizer(target: emailTextField, action: #selector(resignFirstResponder)))
+    }
+    
+    /*
+    @objc func dismissKeyboard(){
+        emailTextField.resignFirstResponder()
+    }*/
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailTextField.resignFirstResponder()
+        return true
+    }
 }

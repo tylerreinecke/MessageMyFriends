@@ -20,6 +20,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         return true
     }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity,
+                     restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+
+        return userActivity.webpageURL.flatMap(handlePasswordlessSignIn)!
+    }
+    
+    /*func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        return application(app, open: url,
+                           sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                           annotation: "")
+    }*/
+    
+    /*func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        if let dynamicLink = DynamicLinks.dynamicLinks().dynamicLink(fromCustomSchemeURL: url) {
+            // Handle the deep link. For example, show the deep-linked content or
+            // apply a promotional offer to the user's account.
+            // ...
+            handlePasswordlessSignIn(withURL: url)
+            return true
+        }
+        return false
+    }*/
+    
+    func handlePasswordlessSignIn(withURL url: URL) -> Bool {
+        let link = url.absoluteString
+        if Auth.auth().isSignIn(withEmailLink: link) {
+            UserDefaults.standard.set(link, forKey: "Link")
+            Constants.link = link
+            return true
+        }
+        return false
+    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
