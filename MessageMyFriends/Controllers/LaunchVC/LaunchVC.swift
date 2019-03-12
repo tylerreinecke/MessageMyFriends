@@ -11,7 +11,8 @@ import UIKit
 class LaunchVC: UIViewController {
     
     var welcomeLabel : UILabel!
-
+    var logoView : UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
