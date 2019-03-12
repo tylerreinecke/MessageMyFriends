@@ -158,9 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				8C54430722379B5A00E2727D /* LoginVC */,
-				8C5442D3223731A600E2727D /* Helpers */,
 				8C5442D2223731A100E2727D /* Resources */,
-				8C5442D12237319900E2727D /* Clients */,
 				8C5442D02237319500E2727D /* Models */,
 				8C5442CF2237318F00E2727D /* Views */,
 				8C5442CE2237318500E2727D /* Controllers */,
@@ -221,13 +219,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		8C5442D12237319900E2727D /* Clients */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Clients;
-			sourceTree = "<group>";
-		};
 		8C5442D2223731A100E2727D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,13 +226,6 @@
 				8C5442E82237727400E2727D /* Constants.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		8C5442D3223731A600E2727D /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8C5442D4223731F100E2727D /* LaunchVC */ = {
