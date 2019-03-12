@@ -19,6 +19,19 @@
 		8C5442CD2235FEB800E2727D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C5442CC2235FEB800E2727D /* GoogleService-Info.plist */; };
 		8C5442DB2237326300E2727D /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442DA2237326300E2727D /* LaunchVC.swift */; };
 		8C5442DD2237327400E2727D /* LaunchVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442DC2237327400E2727D /* LaunchVC-UI.swift */; };
+		8C5442DF22376E2400E2727D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442DE22376E2400E2727D /* HomeVC.swift */; };
+		8C5442E122376E3200E2727D /* HomeVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442E022376E3200E2727D /* HomeVC-UI.swift */; };
+		8C5442E322376E4500E2727D /* HomeVC-MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442E222376E4500E2727D /* HomeVC-MapView.swift */; };
+		8C5442E522376E5200E2727D /* HomeVC-TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442E422376E5200E2727D /* HomeVC-TableView.swift */; };
+		8C5442E7223770B900E2727D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442E6223770B900E2727D /* Friend.swift */; };
+		8C5442E92237727400E2727D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442E82237727400E2727D /* Constants.swift */; };
+		8C5442EB223773D000E2727D /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442EA223773D000E2727D /* FriendCell.swift */; };
+		8C5442EE22377D3800E2727D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442ED22377D3800E2727D /* ChatVC.swift */; };
+		8C5442F022377D4700E2727D /* AddFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442EF22377D4700E2727D /* AddFriendVC.swift */; };
+		8C5442F222377D6400E2727D /* ConfigUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442F122377D6400E2727D /* ConfigUserVC.swift */; };
+		8C5442FB2237847900E2727D /* LoginVC-Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442F82237847900E2727D /* LoginVC-Firebase.swift */; };
+		8C5442FC2237847900E2727D /* LoginVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442F92237847900E2727D /* LoginVC-UI.swift */; };
+		8C5442FD2237847900E2727D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5442FA2237847900E2727D /* LoginVC.swift */; };
 		BE329111C9F82A1C48F90F67 /* Pods_MessageMyFriendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +74,19 @@
 		8C5442CC2235FEB800E2727D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8C5442DA2237326300E2727D /* LaunchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		8C5442DC2237327400E2727D /* LaunchVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LaunchVC-UI.swift"; sourceTree = "<group>"; };
+		8C5442DE22376E2400E2727D /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		8C5442E022376E3200E2727D /* HomeVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC-UI.swift"; sourceTree = "<group>"; };
+		8C5442E222376E4500E2727D /* HomeVC-MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC-MapView.swift"; sourceTree = "<group>"; };
+		8C5442E422376E5200E2727D /* HomeVC-TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeVC-TableView.swift"; sourceTree = "<group>"; };
+		8C5442E6223770B900E2727D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		8C5442E82237727400E2727D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8C5442EA223773D000E2727D /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		8C5442ED22377D3800E2727D /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		8C5442EF22377D4700E2727D /* AddFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendVC.swift; sourceTree = "<group>"; };
+		8C5442F122377D6400E2727D /* ConfigUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigUserVC.swift; sourceTree = "<group>"; };
+		8C5442F82237847900E2727D /* LoginVC-Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC-Firebase.swift"; sourceTree = "<group>"; };
+		8C5442F92237847900E2727D /* LoginVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC-UI.swift"; sourceTree = "<group>"; };
+		8C5442FA2237847900E2727D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9B1CD79493F43E3F60214090 /* Pods_MessageMyFriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A437B36F44DA4AC096D4E /* Pods-MessageMyFriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriendsTests.release.xcconfig"; path = "Target Support Files/Pods-MessageMyFriendsTests/Pods-MessageMyFriendsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +157,7 @@
 		8C5442982235EDDA00E2727D /* MessageMyFriends */ = {
 			isa = PBXGroup;
 			children = (
+				8C5442F72237846B00E2727D /* LoginVC */,
 				8C5442D3223731A600E2727D /* Helpers */,
 				8C5442D2223731A100E2727D /* Resources */,
 				8C5442D12237319900E2727D /* Clients */,
@@ -168,12 +195,11 @@
 		8C5442CE2237318500E2727D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				8C5442D62237320700E2727D /* SignupVC */,
+				8C5442EC22377D2300E2727D /* ConfigUserVC */,
 				8C5442D92237323000E2727D /* ChatVC */,
 				8C5442D82237322900E2727D /* AddFriendVC */,
 				8C5442D72237322200E2727D /* HomeVC */,
 				8C5442D4223731F100E2727D /* LaunchVC */,
-				8C5442D5223731F700E2727D /* LoginVC */,
 				8C54429B2235EDDA00E2727D /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -182,6 +208,7 @@
 		8C5442CF2237318F00E2727D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8C5442EA223773D000E2727D /* FriendCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +216,7 @@
 		8C5442D02237319500E2727D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8C5442E6223770B900E2727D /* Friend.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5442A02235EDDB00E2727D /* Assets.xcassets */,
+				8C5442E82237727400E2727D /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -224,23 +253,13 @@
 			path = LaunchVC;
 			sourceTree = "<group>";
 		};
-		8C5442D5223731F700E2727D /* LoginVC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LoginVC;
-			sourceTree = "<group>";
-		};
-		8C5442D62237320700E2727D /* SignupVC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SignupVC;
-			sourceTree = "<group>";
-		};
 		8C5442D72237322200E2727D /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				8C5442DE22376E2400E2727D /* HomeVC.swift */,
+				8C5442E022376E3200E2727D /* HomeVC-UI.swift */,
+				8C5442E222376E4500E2727D /* HomeVC-MapView.swift */,
+				8C5442E422376E5200E2727D /* HomeVC-TableView.swift */,
 			);
 			path = HomeVC;
 			sourceTree = "<group>";
@@ -248,6 +267,7 @@
 		8C5442D82237322900E2727D /* AddFriendVC */ = {
 			isa = PBXGroup;
 			children = (
+				8C5442EF22377D4700E2727D /* AddFriendVC.swift */,
 			);
 			path = AddFriendVC;
 			sourceTree = "<group>";
@@ -255,8 +275,28 @@
 		8C5442D92237323000E2727D /* ChatVC */ = {
 			isa = PBXGroup;
 			children = (
+				8C5442ED22377D3800E2727D /* ChatVC.swift */,
 			);
 			path = ChatVC;
+			sourceTree = "<group>";
+		};
+		8C5442EC22377D2300E2727D /* ConfigUserVC */ = {
+			isa = PBXGroup;
+			children = (
+				8C5442F122377D6400E2727D /* ConfigUserVC.swift */,
+			);
+			path = ConfigUserVC;
+			sourceTree = "<group>";
+		};
+		8C5442F72237846B00E2727D /* LoginVC */ = {
+			isa = PBXGroup;
+			children = (
+				8C5442F82237847900E2727D /* LoginVC-Firebase.swift */,
+				8C5442F92237847900E2727D /* LoginVC-UI.swift */,
+				8C5442FA2237847900E2727D /* LoginVC.swift */,
+			);
+			name = LoginVC;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		A127541D965C48F8210F1797 /* Pods */ = {
@@ -284,6 +324,7 @@
 				8C5442932235EDDA00E2727D /* Frameworks */,
 				8C5442942235EDDA00E2727D /* Resources */,
 				2A0B1369F301FCF1610BD18F /* [CP] Embed Pods Frameworks */,
+				297E68F36290CAE94BC1B7DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -415,6 +456,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		297E68F36290CAE94BC1B7DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MessageMyFriends/Pods-MessageMyFriends-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAnonymousAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseEmailAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAnonymousAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseEmailAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MessageMyFriends/Pods-MessageMyFriends-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2A0B1369F301FCF1610BD18F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -424,14 +503,40 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MessageMyFriends/Pods-MessageMyFriends-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,8 +617,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C5442EE22377D3800E2727D /* ChatVC.swift in Sources */,
+				8C5442EB223773D000E2727D /* FriendCell.swift in Sources */,
 				8C54429C2235EDDA00E2727D /* ViewController.swift in Sources */,
+				8C5442F222377D6400E2727D /* ConfigUserVC.swift in Sources */,
+				8C5442FD2237847900E2727D /* LoginVC.swift in Sources */,
+				8C5442E322376E4500E2727D /* HomeVC-MapView.swift in Sources */,
+				8C5442E122376E3200E2727D /* HomeVC-UI.swift in Sources */,
+				8C5442FB2237847900E2727D /* LoginVC-Firebase.swift in Sources */,
+				8C5442E522376E5200E2727D /* HomeVC-TableView.swift in Sources */,
+				8C5442FC2237847900E2727D /* LoginVC-UI.swift in Sources */,
+				8C5442DF22376E2400E2727D /* HomeVC.swift in Sources */,
+				8C5442E92237727400E2727D /* Constants.swift in Sources */,
+				8C5442F022377D4700E2727D /* AddFriendVC.swift in Sources */,
 				8C54429A2235EDDA00E2727D /* AppDelegate.swift in Sources */,
+				8C5442E7223770B900E2727D /* Friend.swift in Sources */,
 				8C5442DB2237326300E2727D /* LaunchVC.swift in Sources */,
 				8C5442DD2237327400E2727D /* LaunchVC-UI.swift in Sources */,
 			);

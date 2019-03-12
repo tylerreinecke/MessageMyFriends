@@ -7,6 +7,10 @@ target 'MessageMyFriends' do
 
   # Pods for MessageMyFriends
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'FirebaseUI'
 
   target 'MessageMyFriendsTests' do
     inherit! :search_paths
