@@ -11,6 +11,7 @@ import MapKit
 
 class HomeVC: UIViewController {
     
+    var user : Friend!
     var friendTable : UITableView!
     var friendMap : MKMapView!
     var logoutButton : UIBarButtonItem!

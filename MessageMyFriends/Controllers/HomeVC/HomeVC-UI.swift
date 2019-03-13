@@ -9,12 +9,17 @@
 import UIKit
 import MapKit
 
-extension HomeVC {
+extension HomeVC: UIActionSheetDelegate {
 
     func initUI() {
+        makeSampleFriend()
         setupNavBar()
         setupMapView()
         setupTableView()
+    }
+    
+    func makeSampleFriend() {
+        Constants.friendsList.append(Friend())
     }
     
     func setupNavBar() {
@@ -36,7 +41,7 @@ extension HomeVC {
         friendMap.isZoomEnabled = true
         friendMap.isRotateEnabled = true
         friendMap.isScrollEnabled = true
-        friendMap.addAnnotations(Constants.friendsList)
+        friendMap.addAnnotation(Constants.friendsList[0])
         view.addSubview(friendMap)
     }
     
@@ -47,11 +52,12 @@ extension HomeVC {
         friendTable.dataSource = self
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress))
         friendTable.addGestureRecognizer(longPress)
+        longPress.minimumPressDuration = 0.5
         view.addSubview(friendTable)
     }
     
     @objc func addFriends() {
-        
+        self.performSegue(withIdentifier: "toAddFriendsVC", sender: self)
     }
     
     @objc func logOut() {
@@ -63,8 +69,32 @@ extension HomeVC {
             let touchPoint = sender.location(in: friendTable)
             if let indexPath = friendTable.indexPathForRow(at: touchPoint) {
                 // your code here, get the row for the indexPath or do whatever you want
-                
+                let friendHeld = Constants.friendsList[indexPath.row]
+                let currentlySharing = false///friendHeld.friendStatuses[self.user.uid] != "hiding"
+                let actionSheet = UIAlertController(title: "\(friendHeld.firstName!) \(friendHeld.lastName!)", message: "Choose Option", preferredStyle: .actionSheet)
+                let showAction = UIAlertAction(title: "Show on map", style: .default, handler: {(action) in self.showOnMap(friendHeld)})
+                let locationAction = UIAlertAction(title: currentlySharing ? "Stop Sharing Location" : "Resume Location Sharing", style: .default, handler: {(action) in self.updateLocationSharing(friendHeld)})
+                let removeAction = UIAlertAction(title: "Remove friend", style: .default, handler: {(action) in self.removeFriend(friendHeld)})
+                actionSheet.addAction(showAction)
+                actionSheet.addAction(locationAction)
+                actionSheet.addAction(removeAction)
+                actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+                self.present(actionSheet, animated: true)
             }
         }
     }
+    
+    func showOnMap(_ friend: Friend) {
+        
+    }
+    
+    func updateLocationSharing(_ friend: Friend) {
+        
+    }
+    
+    func removeFriend(_ friend: Friend) {
+        
+    }
+    
+    
 }

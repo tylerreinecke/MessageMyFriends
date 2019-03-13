@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1J8-uB-oJH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R92-LK-36H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,13 +21,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="1J8-uB-oJH" kind="show" id="f4N-41-0LK"/>
                         <segue destination="R92-LK-36H" kind="show" id="6qG-2W-NRd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-897" y="-527"/>
+            <point key="canvasLocation" x="-1764" y="-528"/>
         </scene>
         <!--HomeVC-->
         <scene sceneID="IwU-R5-NQw">
@@ -42,7 +41,7 @@
                     <navigationItem key="navigationItem" id="ae1-Ip-VQf"/>
                     <connections>
                         <segue destination="e4t-6r-aTf" kind="show" identifier="toChatVC" id="bgz-GN-9do"/>
-                        <segue destination="Ecr-eG-ke6" kind="show" id="UuB-5h-sPv"/>
+                        <segue destination="Ecr-eG-ke6" kind="show" identifier="toAddFriendsVC" id="UuB-5h-sPv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GIN-Lr-ezx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -79,6 +78,22 @@
             </objects>
             <point key="canvasLocation" x="-26" y="1753"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="l6o-Kx-CaN">
+            <objects>
+                <navigationController id="q59-aA-nrb" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DeI-AN-WHJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1J8-uB-oJH" kind="relationship" relationship="rootViewController" id="X7O-ir-dTU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdW-lq-yZW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-820" y="-528"/>
+        </scene>
         <!--LoginVC-->
         <scene sceneID="yof-l7-uEK">
             <objects>
@@ -89,6 +104,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tEv-58-R4Q"/>
                     </view>
+                    <navigationItem key="navigationItem" id="czv-RU-ec2"/>
                     <connections>
                         <segue destination="HrK-RP-1og" kind="show" id="XRZ-sD-zA8"/>
                     </connections>
@@ -106,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="DL2-4M-Tz9" kind="relationship" relationship="rootViewController" id="38W-7S-nvU"/>
+                        <segue destination="DL2-4M-Tz9" kind="relationship" relationship="rootViewController" id="DTj-jd-Q4y"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAU-t0-Gr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -133,6 +149,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZMd-Dn-wgK"/>
+        <segue reference="6qG-2W-NRd"/>
     </inferredMetricsTieBreakers>
 </document>
