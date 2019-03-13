@@ -13,12 +13,19 @@ class LoginVC: UIViewController {
     var welcomeLabel : UILabel!
     var logoView : UIImageView!
     var emailTextField: UITextField!
-    var signupButton: UIButton!
+    
+    var sendEmailButton: UIButton!
+    var signInButton: UIButton!
+    
+    
+    var link: String!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         initUI()
+        emailTextField.text = UserDefaults.standard.value(forKey: "Email") as? String
+    
         // Do any additional setup after loading the view.
     }
     

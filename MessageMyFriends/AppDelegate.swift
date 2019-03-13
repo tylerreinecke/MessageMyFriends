@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseDynamicLinks
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +20,59 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         return true
+    }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        let handled = DynamicLinks.dynamicLinks().handleUniversalLink(userActivity.webpageURL!) { (dynamiclink, error) in
+            if let link = dynamiclink?.url {
+                debugPrint("received link: \(link)")
+            }
+        }
+        return userActivity.webpageURL.flatMap(handlePasswordlessSignIn)!
+
+    }
+    
+    
+    /*func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        return application(app, open: url,
+                           sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                           annotation: "")
+    }*/
+    
+    /*func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        if let dynamicLink = DynamicLinks.dynamicLinks().dynamicLink(fromCustomSchemeURL: url) {
+            // Handle the deep link. For example, show the deep-linked content or
+            // apply a promotional offer to the user's account.
+            // ...
+            handlePasswordlessSignIn(withURL: url)
+            return true
+        }
+        return false
+    }*/
+    
+    func handlePasswordlessSignIn(withURL url: URL) -> Bool {
+        let link = url.absoluteString
+        if Auth.auth().isSignIn(withEmailLink: link) {
+            UserDefaults.standard.set(link, forKey: "Link")
+            
+            Auth.auth().signIn(withEmail: UserDefaults.standard.string(forKey: "Email")!, link: link) { (result, error) in
+                if (error == nil && result != nil) {
+                    if (Auth.auth().currentUser?.isEmailVerified)! {
+                        print("User verified")
+                        //self.userSuccess(2)
+                    } else {
+                        print("Error sigining in")
+                    }
+                } else {
+                    print(error?.localizedDescription)
+                }
+                
+                (self.window?.rootViewController as? UINavigationController)?.popToRootViewController(animated: false)
+                self.window?.rootViewController?.children[0].performSegue(withIdentifier: "passwordless", sender: nil)
+            }
+           return true
+        }
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -33,6 +33,7 @@
 		8C54430C22379B7200E2727D /* LoginVC-Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430922379B7200E2727D /* LoginVC-Firebase.swift */; };
 		8C54430D22379B7200E2727D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430A22379B7200E2727D /* LoginVC.swift */; };
 		BE329111C9F82A1C48F90F67 /* Pods_MessageMyFriendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */; };
+		C02FA8582238810A002BEDCA /* ConfigerUser-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FA8572238810A002BEDCA /* ConfigerUser-UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		9B1CD79493F43E3F60214090 /* Pods_MessageMyFriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A437B36F44DA4AC096D4E /* Pods-MessageMyFriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriendsTests.release.xcconfig"; path = "Target Support Files/Pods-MessageMyFriendsTests/Pods-MessageMyFriendsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C02FA8572238810A002BEDCA /* ConfigerUser-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigerUser-UI.swift"; sourceTree = "<group>"; };
 		EABBF6B8ED8D1A0A51E2C2F8 /* Pods-MessageMyFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriends.debug.xcconfig"; path = "Target Support Files/Pods-MessageMyFriends/Pods-MessageMyFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		EBE62EBB98C42884CB6A04CB /* Pods_MessageMyFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -158,9 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				8C54430722379B5A00E2727D /* LoginVC */,
-				8C5442D3223731A600E2727D /* Helpers */,
 				8C5442D2223731A100E2727D /* Resources */,
-				8C5442D12237319900E2727D /* Clients */,
 				8C5442D02237319500E2727D /* Models */,
 				8C5442CF2237318F00E2727D /* Views */,
 				8C5442CE2237318500E2727D /* Controllers */,
@@ -221,13 +221,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		8C5442D12237319900E2727D /* Clients */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Clients;
-			sourceTree = "<group>";
-		};
 		8C5442D2223731A100E2727D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -235,13 +228,6 @@
 				8C5442E82237727400E2727D /* Constants.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		8C5442D3223731A600E2727D /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8C5442D4223731F100E2727D /* LaunchVC */ = {
@@ -284,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5442F122377D6400E2727D /* ConfigUserVC.swift */,
+				C02FA8572238810A002BEDCA /* ConfigerUser-UI.swift */,
 			);
 			path = ConfigUserVC;
 			sourceTree = "<group>";
@@ -634,6 +621,7 @@
 				8C5442DB2237326300E2727D /* LaunchVC.swift in Sources */,
 				8C54430B22379B7200E2727D /* LoginVC-UI.swift in Sources */,
 				8C5442DD2237327400E2727D /* LaunchVC-UI.swift in Sources */,
+				C02FA8582238810A002BEDCA /* ConfigerUser-UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

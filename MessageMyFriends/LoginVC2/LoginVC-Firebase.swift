@@ -19,7 +19,8 @@ extension LoginVC {
         return emailTest.evaluate(with: testStr)
     }
     
-    @objc func loginButtonPressed(){
+    
+    @objc func sendEmailPressed(){
         guard let emailField = emailTextField.text else { return }
         
         guard emailField != "" else {
@@ -32,6 +33,28 @@ extension LoginVC {
         }
     }
     
+    /*func didTapSignInWithEmailLink(_ link: String)  {
+        if let link = UserDefaults.standard.value(forKey: "Link") as? String {
+            self.link = link
+        }
+        if let email = self.emailTextField.text {
+            // [START signin_emaillink]
+            Auth.auth().signIn(withEmail: emailTextField.text!, link: self.link) { (result, error) in
+                if (error == nil && result != nil) {
+                    if (Auth.auth().currentUser?.isEmailVerified)! {
+                        print("User verified")
+                        self.userSuccess(2)
+                    } else {
+                        self.userError(3)
+                    }
+                } else {
+                    print(error?.localizedDescription)
+                }
+            }
+        }
+    }*/
+
+
     func userError(_ errorType : Int) {
         var message = ""
         
@@ -40,10 +63,12 @@ extension LoginVC {
             message = "Couldn't Send Email"
         case 2:
             message = "Missing input. Your email is blank!"
+        case 3:
+            message = "User cannot be verified. Check your inputs"
         default:
             message = "something went wrong! try again later"
         }
-        signupButton.isUserInteractionEnabled = true
+        sendEmailButton.isUserInteractionEnabled = true
     }
     
     func userSuccess(_ errorType : Int) {
@@ -52,6 +77,8 @@ extension LoginVC {
         switch errorType {
         case 1:
             message = "Check your email for the sign in link."
+        case 2:
+            message = "User verified!"
         default:
             message = "Check again"
         }
@@ -60,7 +87,7 @@ extension LoginVC {
         let defaultAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alert.addAction(defaultAction)
         self.present(alert, animated: true, completion: nil)
-        signupButton.isUserInteractionEnabled = true
+        sendEmailButton.isUserInteractionEnabled = true
     }
     
     func signIn(email: String) {
@@ -68,7 +95,7 @@ extension LoginVC {
         actionCodeSettings.url = URL(string: "https://messagemyfriends-9b28f.firebaseapp.com")
         actionCodeSettings.handleCodeInApp = true
         actionCodeSettings.setIOSBundleID(Bundle.main.bundleIdentifier!)
-        actionCodeSettings.dynamicLinkDomain = "https://anity.page.link/apple-app-site-association"
+        actionCodeSettings.dynamicLinkDomain = "anity.page.link"
         Auth.auth().sendSignInLink(toEmail:email, actionCodeSettings: actionCodeSettings) { error in
             if let error = error {
                 self.userError(1)
@@ -78,7 +105,6 @@ extension LoginVC {
             self.userSuccess(1)
         }
 
-        
     }
     
     

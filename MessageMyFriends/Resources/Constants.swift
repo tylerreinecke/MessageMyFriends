@@ -10,7 +10,7 @@ import UIKit
 
 class Constants {
     
+    //static var link = "link"
     static var friendsList = [Friend]()
 
-    
 }
