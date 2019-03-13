@@ -19,7 +19,7 @@ extension HomeVC: UIActionSheetDelegate {
     }
     
     func makeSampleFriend() {
-        Constants.friendsList.append(Friend())
+        Constants.friendsList.append(User())
     }
     
     func setupNavBar() {
@@ -84,15 +84,15 @@ extension HomeVC: UIActionSheetDelegate {
         }
     }
     
-    func showOnMap(_ friend: Friend) {
+    func showOnMap(_ friend: User) {
         
     }
     
-    func updateLocationSharing(_ friend: Friend) {
+    func updateLocationSharing(_ friend: User) {
         
     }
     
-    func removeFriend(_ friend: Friend) {
+    func removeFriend(_ friend: User) {
         
     }
     

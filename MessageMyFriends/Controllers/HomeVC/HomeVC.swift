@@ -11,12 +11,12 @@ import MapKit
 
 class HomeVC: UIViewController {
     
-    var user : Friend!
+    var user : User!
     var friendTable : UITableView!
     var friendMap : MKMapView!
     var logoutButton : UIBarButtonItem!
     var addFriendButton : UIBarButtonItem!
-    var friendSelected : Friend?
+    var friendSelected : User?
     
 
     override func viewDidLoad() {

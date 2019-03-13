@@ -10,7 +10,7 @@ import UIKit
 
 class ChatVC: UIViewController {
     
-    var friend : Friend!
+    var friend : User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
