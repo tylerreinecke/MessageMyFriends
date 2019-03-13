@@ -34,6 +34,9 @@
 		8C54430D22379B7200E2727D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430A22379B7200E2727D /* LoginVC.swift */; };
 		BE329111C9F82A1C48F90F67 /* Pods_MessageMyFriendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */; };
 		C02FA8582238810A002BEDCA /* ConfigerUser-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FA8572238810A002BEDCA /* ConfigerUser-UI.swift */; };
+		C081992C2239910E00E4785C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081992B2239910E00E4785C /* Chat.swift */; };
+		C081993422399E1F00E4785C /* ChatVC-Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081993322399E1F00E4785C /* ChatVC-Firebase.swift */; };
+		C08199362239A50000E4785C /* ChatVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08199352239A50000E4785C /* ChatVC-UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,10 @@
 		A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A437B36F44DA4AC096D4E /* Pods-MessageMyFriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriendsTests.release.xcconfig"; path = "Target Support Files/Pods-MessageMyFriendsTests/Pods-MessageMyFriendsTests.release.xcconfig"; sourceTree = "<group>"; };
 		C02FA8572238810A002BEDCA /* ConfigerUser-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigerUser-UI.swift"; sourceTree = "<group>"; };
+		C081992B2239910E00E4785C /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		C081992E2239996900E4785C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		C081993322399E1F00E4785C /* ChatVC-Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatVC-Firebase.swift"; sourceTree = "<group>"; };
+		C08199352239A50000E4785C /* ChatVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatVC-UI.swift"; sourceTree = "<group>"; };
 		EABBF6B8ED8D1A0A51E2C2F8 /* Pods-MessageMyFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriends.debug.xcconfig"; path = "Target Support Files/Pods-MessageMyFriends/Pods-MessageMyFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		EBE62EBB98C42884CB6A04CB /* Pods_MessageMyFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -170,6 +177,7 @@
 				8C5442A22235EDDB00E2727D /* LaunchScreen.storyboard */,
 				8C5442A52235EDDB00E2727D /* Info.plist */,
 				8C5442CC2235FEB800E2727D /* GoogleService-Info.plist */,
+				C081992E2239996900E4785C /* Bridging-Header.h */,
 			);
 			path = MessageMyFriends;
 			sourceTree = "<group>";
@@ -217,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				8C5442E6223770B900E2727D /* Friend.swift */,
+				C081992B2239910E00E4785C /* Chat.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,6 +271,8 @@
 			isa = PBXGroup;
 			children = (
 				8C5442ED22377D3800E2727D /* ChatVC.swift */,
+				C08199352239A50000E4785C /* ChatVC-UI.swift */,
+				C081993322399E1F00E4785C /* ChatVC-Firebase.swift */,
 			);
 			path = ChatVC;
 			sourceTree = "<group>";
@@ -490,15 +501,28 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MessageMyFriends/Pods-MessageMyFriends-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ARMDevSuite/ARMDevSuite.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/DKCamera/DKCamera.framework",
+				"${BUILT_PRODUCTS_DIR}/DKImagePickerController/DKImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/DKPhotoGallery/DKPhotoGallery.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/TOCropViewController/TOCropViewController.framework",
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -510,15 +534,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARMDevSuite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKCamera.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKPhotoGallery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TOCropViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -617,10 +654,13 @@
 				8C5442F022377D4700E2727D /* AddFriendVC.swift in Sources */,
 				8C54429A2235EDDA00E2727D /* AppDelegate.swift in Sources */,
 				8C54430D22379B7200E2727D /* LoginVC.swift in Sources */,
+				C081993422399E1F00E4785C /* ChatVC-Firebase.swift in Sources */,
 				8C5442E7223770B900E2727D /* Friend.swift in Sources */,
 				8C5442DB2237326300E2727D /* LaunchVC.swift in Sources */,
+				C08199362239A50000E4785C /* ChatVC-UI.swift in Sources */,
 				8C54430B22379B7200E2727D /* LoginVC-UI.swift in Sources */,
 				8C5442DD2237327400E2727D /* LaunchVC-UI.swift in Sources */,
+				C081992C2239910E00E4785C /* Chat.swift in Sources */,
 				C02FA8582238810A002BEDCA /* ConfigerUser-UI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -807,6 +847,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdb.iostraining.sp19.mp5.anity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -827,6 +868,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mdb.iostraining.sp19.mp5.anity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -6,9 +6,18 @@
 //  Copyright © 2019 Tyler Reinecke. All rights reserved.
 //
 
+import Foundation
 import UIKit
+import ARMDevSuite
 
 class ChatVC: UIViewController {
+    var composeBar: UIView!
+    var composeTextField: UITextField!
+    var sendButton: UIButton!
+    
+    var chatView: UITableView!
+    
+    
     
     var friend : Friend!
 
