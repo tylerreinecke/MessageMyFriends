@@ -15,12 +15,13 @@ extension ConfigUserVC {
         profileImageSetup()
         userNameSetup()
         emailDisplay()
+        addTapDismiss()
         
     }
     
     func profileImageSetup(){
         profileImage = UIButton(frame: CGRect(x: 0, y: view.frame.height / 10, width: view.frame.width, height: view.frame.height / 3))
-        profileImage.setImage(UIImage(named: "profile"), for: .normal)
+        profileImage.setImage(UIImage(named: "profile2"), for: .normal)
         profileImage.contentMode = .scaleAspectFit
         profileImage.imageView?.contentMode = .scaleAspectFill
         profileImage.addTarget(self, action: #selector(imageTaking), for: .touchUpInside)
@@ -85,10 +86,26 @@ extension ConfigUserVC {
     
     func emailDisplay(){
         email = UILabel(frame: CGRect(x: view.frame.width / 12 , y: lastName.frame.maxY + 50, width: view.frame.width - 80, height: 50))
-        email.textAlignment = .center
         email.text = "Email: "
         email.font = UIFont(name: "Avenir", size: 28)
+        email.textColor = UIColor(red:0.57, green:0.70, blue:0.95, alpha:1.0)
         view.addSubview(email)
+    }
+    
+    func addTapDismiss() {
+        view.addGestureRecognizer(UITapGestureRecognizer(target: firstName, action: #selector(resignFirstResponder)))
+        //view.addGestureRecognizer(UITapGestureRecognizer(target: lastName, action: #selector(resignFirstResponder)))
+    }
+    
+    func addTapDismiss2() {
+        //view.addGestureRecognizer(UITapGestureRecognizer(target: firstName, action: #selector(resignFirstResponder)))
+        view.addGestureRecognizer(UITapGestureRecognizer(target: lastName, action: #selector(resignFirstResponder)))
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        firstName.resignFirstResponder()
+        lastName.resignFirstResponder()
+        return true
     }
     
     

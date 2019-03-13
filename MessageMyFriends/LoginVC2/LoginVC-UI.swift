@@ -59,6 +59,8 @@ extension LoginVC: UITextFieldDelegate {
         view.addGestureRecognizer(UITapGestureRecognizer(target: emailTextField, action: #selector(resignFirstResponder)))
     }
     
+    
+    
     /*
     @objc func dismissKeyboard(){
         emailTextField.resignFirstResponder()
