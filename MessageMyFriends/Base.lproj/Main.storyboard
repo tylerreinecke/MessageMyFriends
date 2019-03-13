@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1J8-uB-oJH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R92-LK-36H">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,7 +21,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <segue destination="1J8-uB-oJH" kind="show" id="f4N-41-0LK"/>
                         <segue destination="R92-LK-36H" kind="show" id="6qG-2W-NRd"/>
                     </connections>
                 </viewController>
@@ -89,6 +88,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tEv-58-R4Q"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1fx-Am-TFY"/>
                     <connections>
                         <segue destination="HrK-RP-1og" kind="show" identifier="passwordless" id="XRZ-sD-zA8"/>
                     </connections>
@@ -106,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="DL2-4M-Tz9" kind="relationship" relationship="rootViewController" id="38W-7S-nvU"/>
+                        <segue destination="1J8-uB-oJH" kind="relationship" relationship="rootViewController" id="TY7-AO-bpI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAU-t0-Gr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -133,6 +133,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ZMd-Dn-wgK"/>
+        <segue reference="6qG-2W-NRd"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -33,14 +33,13 @@ extension LoginVC {
         }
     }
     
-    @objc func didTapSignInWithEmailLink(_ sender: AnyObject)  {
+    /*func didTapSignInWithEmailLink(_ link: String)  {
         if let link = UserDefaults.standard.value(forKey: "Link") as? String {
             self.link = link
         }
-        
         if let email = self.emailTextField.text {
             // [START signin_emaillink]
-            Auth.auth().signIn(withEmail: emailTextField.text!, link: Constants.link) { (result, error) in
+            Auth.auth().signIn(withEmail: emailTextField.text!, link: self.link) { (result, error) in
                 if (error == nil && result != nil) {
                     if (Auth.auth().currentUser?.isEmailVerified)! {
                         print("User verified")
@@ -53,7 +52,7 @@ extension LoginVC {
                 }
             }
         }
-    }
+    }*/
 
 
     func userError(_ errorType : Int) {

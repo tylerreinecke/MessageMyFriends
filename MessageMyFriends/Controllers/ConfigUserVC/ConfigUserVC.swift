@@ -8,11 +8,17 @@
 
 import UIKit
 
-class ConfigUserVC: UIViewController {
+class ConfigUserVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    var firstName : UITextField!
+    var lastName : UITextField!
+    
+    var email : UILabel!
+    var profileImage : UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        uiSetup()
         // Do any additional setup after loading the view.
     }
     

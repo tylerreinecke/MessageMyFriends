@@ -10,7 +10,7 @@ import UIKit
 
 class Constants: UIViewController {
     
-    static var link = "link"
+    //static var link = "link"
     static var friendsList = [Friend]()
 
     override func viewDidLoad() {

@@ -12,7 +12,7 @@ import UIKit
 extension LoginVC: UITextFieldDelegate {
     func initUI() {
         logoView = UIImageView(frame: CGRect(x: 0, y: 0, width: 400, height: 300))
-        logoView.center = CGPoint(x: view.frame.midX, y: 300)
+        logoView.center = CGPoint(x: view.frame.midX, y: view.frame.midY-100)
         logoView.image = UIImage(named: "messageFriendsLogo")
         view.addSubview(logoView)
         
@@ -48,7 +48,7 @@ extension LoginVC: UITextFieldDelegate {
         signInButton.backgroundColor = UIColor(red:0.57, green:0.70, blue:0.95, alpha:1.0)
         signInButton.layer.cornerRadius = 12
         signInButton.setTitleColor(.white, for: .normal)
-        signInButton.addTarget(self, action: #selector(didTapSignInWithEmailLink), for: .touchUpInside)
+        //signInButton.addTarget(self, action: #selector(sendEmailButton), for: .touchUpInside)
         view.addSubview(signInButton)
         
         addTapDismiss()
