@@ -9,17 +9,14 @@
 import Foundation
 import UIKit
 import ARMDevSuite
+import MessageKit
 
-class ChatVC: UIViewController {
-    var composeBar: UIView!
-    var composeTextField: UITextField!
-    var sendButton: UIButton!
+class ChatVC: MessagesViewController {
     
-    var chatView: UITableView!
+    var messages: [Message] = []
+    var member: User!
     
-    
-    
-    var friend : User!
+    var friend: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()

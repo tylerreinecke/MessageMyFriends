@@ -12,7 +12,6 @@ target 'MessageMyFriends' do
   pod 'Firebase/Storage'
   pod 'FirebaseUI'
   pod 'Firebase/DynamicLinks'
-  pod 'JSQMessagesViewController'
   pod 'MessageKit'
   pod 'ARMDevSuite'
 

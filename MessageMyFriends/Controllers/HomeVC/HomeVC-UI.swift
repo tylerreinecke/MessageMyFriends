@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import FirebaseAuth
 
 extension HomeVC: UIActionSheetDelegate {
 
@@ -61,7 +62,13 @@ extension HomeVC: UIActionSheetDelegate {
     }
     
     @objc func logOut() {
-        
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc func handleLongPress(sender: UILongPressGestureRecognizer) {
