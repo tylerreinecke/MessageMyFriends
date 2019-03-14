@@ -25,6 +25,5 @@ extension ChatVC {
         sendButton.isEnabled = false
         sendButton.addTarget(self, action: #selector(sendTextMessage), for: .touchUpInside)
     }
-    
-    
+   
 }
