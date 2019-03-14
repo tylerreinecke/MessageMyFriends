@@ -22,6 +22,7 @@ class User: NSObject, MKAnnotation {
     var email : String!
     var sharingLocation : Bool!
     var friendStatuses : [String : String] = [:] //key is userID, value is "hiding" or "sharing"
+    var friendsList = [User]()
 
     override init() {
         self.coordinate = CLLocationCoordinate2D(latitude: 37.8719, longitude: 122.2585)

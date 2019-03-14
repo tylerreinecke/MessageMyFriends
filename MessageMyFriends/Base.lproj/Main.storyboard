@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e4t-6r-aTf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q59-aA-nrb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,6 +22,7 @@
                     </view>
                     <connections>
                         <segue destination="R92-LK-36H" kind="show" id="6qG-2W-NRd"/>
+                        <segue destination="q59-aA-nrb" kind="show" id="B2a-di-1l1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -140,7 +141,7 @@
                         <viewLayoutGuide key="safeArea" id="aMj-YZ-2LG"/>
                     </view>
                     <connections>
-                        <segue destination="R92-LK-36H" kind="show" id="ZMd-Dn-wgK"/>
+                        <segue destination="R92-LK-36H" kind="show" identifier="configToHome" id="ZMd-Dn-wgK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dh3-nx-WMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,6 +150,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6qG-2W-NRd"/>
+        <segue reference="ZMd-Dn-wgK"/>
     </inferredMetricsTieBreakers>
 </document>

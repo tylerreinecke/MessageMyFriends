@@ -32,9 +32,9 @@
 		8C54430B22379B7200E2727D /* LoginVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430822379B7200E2727D /* LoginVC-UI.swift */; };
 		8C54430C22379B7200E2727D /* LoginVC-Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430922379B7200E2727D /* LoginVC-Firebase.swift */; };
 		8C54430D22379B7200E2727D /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430A22379B7200E2727D /* LoginVC.swift */; };
-		8C54430F223898EB00E2727D /* ConfigerUser-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C54430E223898EB00E2727D /* ConfigerUser-UI.swift */; };
+		8C5443142239C57700E2727D /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5443132239C57700E2727D /* FirebaseAPI.swift */; };
+		8C5443182239DBAB00E2727D /* ConfigUserVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5443172239DBAB00E2727D /* ConfigUserVC-UI.swift */; };
 		BE329111C9F82A1C48F90F67 /* Pods_MessageMyFriendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */; };
-		C02FA8582238810A002BEDCA /* ConfigerUser-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02FA8572238810A002BEDCA /* ConfigerUser-UI.swift */; };
 		C081992C2239910E00E4785C /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081992B2239910E00E4785C /* Chat.swift */; };
 		C081993422399E1F00E4785C /* ChatVC-Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081993322399E1F00E4785C /* ChatVC-Firebase.swift */; };
 		C08199362239A50000E4785C /* ChatVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08199352239A50000E4785C /* ChatVC-UI.swift */; };
@@ -92,11 +92,11 @@
 		8C54430822379B7200E2727D /* LoginVC-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC-UI.swift"; sourceTree = "<group>"; };
 		8C54430922379B7200E2727D /* LoginVC-Firebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginVC-Firebase.swift"; sourceTree = "<group>"; };
 		8C54430A22379B7200E2727D /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		8C54430E223898EB00E2727D /* ConfigerUser-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ConfigerUser-UI.swift"; path = "../../../../../../../Downloads/ConfigerUser-UI.swift"; sourceTree = "<group>"; };
+		8C5443132239C57700E2727D /* FirebaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAPI.swift; sourceTree = "<group>"; };
+		8C5443172239DBAB00E2727D /* ConfigUserVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigUserVC-UI.swift"; sourceTree = "<group>"; };
 		9B1CD79493F43E3F60214090 /* Pods_MessageMyFriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A437B36F44DA4AC096D4E /* Pods-MessageMyFriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriendsTests.release.xcconfig"; path = "Target Support Files/Pods-MessageMyFriendsTests/Pods-MessageMyFriendsTests.release.xcconfig"; sourceTree = "<group>"; };
-		C02FA8572238810A002BEDCA /* ConfigerUser-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigerUser-UI.swift"; sourceTree = "<group>"; };
 		C081992B2239910E00E4785C /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		C081992E2239996900E4785C /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		C081993322399E1F00E4785C /* ChatVC-Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatVC-Firebase.swift"; sourceTree = "<group>"; };
@@ -152,6 +152,7 @@
 				8C5442972235EDDA00E2727D /* Products */,
 				A127541D965C48F8210F1797 /* Pods */,
 				746BE0DC6F0A29EFFFA4B186 /* Frameworks */,
+				8C5443122239C56100E2727D /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +237,7 @@
 		8C5442D12237319900E2727D /* Clients */ = {
 			isa = PBXGroup;
 			children = (
+				8C5443132239C57700E2727D /* FirebaseAPI.swift */,
 			);
 			path = Clients;
 			sourceTree = "<group>";
@@ -298,8 +300,8 @@
 		8C5442EC22377D2300E2727D /* ConfigUserVC */ = {
 			isa = PBXGroup;
 			children = (
-				8C54430E223898EB00E2727D /* ConfigerUser-UI.swift */,
 				8C5442F122377D6400E2727D /* ConfigUserVC.swift */,
+				8C5443172239DBAB00E2727D /* ConfigUserVC-UI.swift */,
 			);
 			path = ConfigUserVC;
 			sourceTree = "<group>";
@@ -313,6 +315,11 @@
 			);
 			name = LoginVC;
 			path = LoginVC2;
+			sourceTree = "<group>";
+		};
+		8C5443122239C56100E2727D /* Recovered References */ = {
+			isa = PBXGroup;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		A127541D965C48F8210F1797 /* Pods */ = {
@@ -666,6 +673,7 @@
 				8C5442E322376E4500E2727D /* HomeVC-MapView.swift in Sources */,
 				8C5442E122376E3200E2727D /* HomeVC-UI.swift in Sources */,
 				8C5442E522376E5200E2727D /* HomeVC-TableView.swift in Sources */,
+				8C5443182239DBAB00E2727D /* ConfigUserVC-UI.swift in Sources */,
 				8C5442DF22376E2400E2727D /* HomeVC.swift in Sources */,
 				8C5442E92237727400E2727D /* Constants.swift in Sources */,
 				8C54430C22379B7200E2727D /* LoginVC-Firebase.swift in Sources */,
@@ -680,6 +688,7 @@
 				8C5442DD2237327400E2727D /* LaunchVC-UI.swift in Sources */,
 				C081992C2239910E00E4785C /* Chat.swift in Sources */,
 				C02FA8582238810A002BEDCA /* ConfigerUser-UI.swift in Sources */,
+				8C5443142239C57700E2727D /* FirebaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

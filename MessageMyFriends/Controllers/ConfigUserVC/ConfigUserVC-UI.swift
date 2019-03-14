@@ -9,7 +9,7 @@
 import UIKit
 
 extension ConfigUserVC {
-
+    
     /// Add signup screen elements
     func uiSetup(){
         profileImageSetup()
@@ -61,6 +61,7 @@ extension ConfigUserVC {
         let chosenImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         profileImage.setImage(chosenImage, for: .normal)
         dismiss(animated:true, completion: nil)
+        FirebaseAPI().putUser(User(), chosenImage)
     }
     
     
