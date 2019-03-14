@@ -47,4 +47,21 @@ class FirebaseAPI {
         alert.addAction(defaultAction)
         //self.present(alert, animated: true, completion: nil)
     }
+    
+    static func listenForChats(onNewMessage: @escaping (Message) -> () ) {
+        Database.database().reference().child("chat").observe(.childAdded) { (snap) in
+            guard let data = snap.value as? [String: Any?] else {
+                return
+            }
+            
+            onNewMessage(Message(key: snap.key, record: data))
+            
+        }
+    }
+    
+    static func send(msg: Message, completion: @escaping () -> ()) {
+        Database.database().reference().child("chat").child(msg.uid).setValue(msg.createPushable()) { (err, ref) in
+            completion()
+        }
+    }
 }

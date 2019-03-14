@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import MessageMyFriends
 
 class MessageMyFriendsTests: XCTestCase {
 

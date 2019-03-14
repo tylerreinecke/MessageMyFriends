@@ -35,8 +35,11 @@
 		8C5443142239C57700E2727D /* FirebaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5443132239C57700E2727D /* FirebaseAPI.swift */; };
 		8C5443182239DBAB00E2727D /* ConfigUserVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5443172239DBAB00E2727D /* ConfigUserVC-UI.swift */; };
 		BE329111C9F82A1C48F90F67 /* Pods_MessageMyFriendsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */; };
+		C03BA1AB223B06EC00BBDE4A /* ChatVC-Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BA1AA223B06EC00BBDE4A /* ChatVC-Table.swift */; };
+		C03BA1AD223B072E00BBDE4A /* ChatVC-Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BA1AC223B072E00BBDE4A /* ChatVC-Text.swift */; };
+		C03BA1AF223B077F00BBDE4A /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BA1AE223B077F00BBDE4A /* ChatCell.swift */; };
 		C081992C2239910E00E4785C /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081992B2239910E00E4785C /* Message.swift */; };
-		C081993422399E1F00E4785C /* ChatVC-Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081993322399E1F00E4785C /* ChatVC-Firebase.swift */; };
+		C081993422399E1F00E4785C /* ChatVC-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C081993322399E1F00E4785C /* ChatVC-UI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,8 +99,11 @@
 		9B1CD79493F43E3F60214090 /* Pods_MessageMyFriendsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C1632C39CE78FCE0E52E0C /* Pods_MessageMyFriendsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriendsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B11A437B36F44DA4AC096D4E /* Pods-MessageMyFriendsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriendsTests.release.xcconfig"; path = "Target Support Files/Pods-MessageMyFriendsTests/Pods-MessageMyFriendsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C03BA1AA223B06EC00BBDE4A /* ChatVC-Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatVC-Table.swift"; sourceTree = "<group>"; };
+		C03BA1AC223B072E00BBDE4A /* ChatVC-Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatVC-Text.swift"; sourceTree = "<group>"; };
+		C03BA1AE223B077F00BBDE4A /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		C081992B2239910E00E4785C /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		C081993322399E1F00E4785C /* ChatVC-Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatVC-Firebase.swift"; sourceTree = "<group>"; };
+		C081993322399E1F00E4785C /* ChatVC-UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChatVC-UI.swift"; sourceTree = "<group>"; };
 		C0B215602239F75F0095B7C8 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		EABBF6B8ED8D1A0A51E2C2F8 /* Pods-MessageMyFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessageMyFriends.debug.xcconfig"; path = "Target Support Files/Pods-MessageMyFriends/Pods-MessageMyFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		EBE62EBB98C42884CB6A04CB /* Pods_MessageMyFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessageMyFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,7 +295,10 @@
 			isa = PBXGroup;
 			children = (
 				8C5442ED22377D3800E2727D /* ChatVC.swift */,
-				C081993322399E1F00E4785C /* ChatVC-Firebase.swift */,
+				C081993322399E1F00E4785C /* ChatVC-UI.swift */,
+				C03BA1AA223B06EC00BBDE4A /* ChatVC-Table.swift */,
+				C03BA1AC223B072E00BBDE4A /* ChatVC-Text.swift */,
+				C03BA1AE223B077F00BBDE4A /* ChatCell.swift */,
 			);
 			path = ChatVC;
 			sourceTree = "<group>";
@@ -528,6 +537,7 @@
 				"${BUILT_PRODUCTS_DIR}/ARMDevSuite/ARMDevSuite.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/DKCamera/DKCamera.framework",
 				"${BUILT_PRODUCTS_DIR}/DKImagePickerController/DKImagePickerController.framework",
@@ -559,6 +569,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARMDevSuite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKCamera.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DKImagePickerController.framework",
@@ -661,6 +672,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03BA1AD223B072E00BBDE4A /* ChatVC-Text.swift in Sources */,
 				8C5442EE22377D3800E2727D /* ChatVC.swift in Sources */,
 				8C5442EB223773D000E2727D /* FriendCell.swift in Sources */,
 				8C54429C2235EDDA00E2727D /* ViewController.swift in Sources */,
@@ -676,12 +688,14 @@
 				8C54429A2235EDDA00E2727D /* AppDelegate.swift in Sources */,
 				8C54430D22379B7200E2727D /* LoginVC.swift in Sources */,
 				8C5442E7223770B900E2727D /* User.swift in Sources */,
-				C081993422399E1F00E4785C /* ChatVC-Firebase.swift in Sources */,
+				C081993422399E1F00E4785C /* ChatVC-UI.swift in Sources */,
+				C03BA1AF223B077F00BBDE4A /* ChatCell.swift in Sources */,
 				8C5442DB2237326300E2727D /* LaunchVC.swift in Sources */,
 				8C54430B22379B7200E2727D /* LoginVC-UI.swift in Sources */,
 				8C5442DD2237327400E2727D /* LaunchVC-UI.swift in Sources */,
 				C081992C2239910E00E4785C /* Message.swift in Sources */,
 				8C5443142239C57700E2727D /* FirebaseAPI.swift in Sources */,
+				C03BA1AB223B06EC00BBDE4A /* ChatVC-Table.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

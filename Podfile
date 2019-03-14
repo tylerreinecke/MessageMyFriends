@@ -14,6 +14,7 @@ target 'MessageMyFriends' do
   pod 'Firebase/DynamicLinks'
   pod 'MessageKit'
   pod 'ARMDevSuite'
+  pod 'ChameleonFramework/Swift', :git => 'https://github.com/ViccAlexander/Chameleon.git', :branch => 'wip/swift4', :inhibit_warnings => true
 
   target 'MessageMyFriendsTests' do
     inherit! :search_paths
