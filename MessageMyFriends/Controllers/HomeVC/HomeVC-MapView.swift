@@ -13,7 +13,7 @@ extension HomeVC: MKMapViewDelegate {
 
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         // 2
-        guard let annotation = annotation as? Friend else { return nil }
+        guard let annotation = annotation as? User else { return nil }
         // 3
         let identifier = "marker"
         var view: MKMarkerAnnotationView

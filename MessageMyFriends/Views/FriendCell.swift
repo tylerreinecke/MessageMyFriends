@@ -13,7 +13,7 @@ class FriendCell: UITableViewCell {
     var size : CGSize!
     var userPhoto : UIImageView!
     var nameLabel : UILabel!
-    var friend : Friend!
+    var friend : User!
     var statusLabel : UILabel!
     var addButton : UIButton!
     var acceptLabel : UILabel!
@@ -62,7 +62,7 @@ class FriendCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func updateFriend(to newFriend: Friend) {
+    func updateFriend(to newFriend: User) {
         //UI Content
         self.friend = newFriend
         
