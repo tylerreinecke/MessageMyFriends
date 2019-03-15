@@ -8,43 +8,24 @@
 
 import Foundation
 import UIKit
-import ARMDevSuite
+import MessageKit
+import ChameleonFramework
 
-class ChatVC: UIViewController {
-    var user: User!
-    var messages = [Message]()
+class ChatVC: MessagesViewController {
+    var messages: [Message] = []
+    var member: Member!
     var friend: User!
-    
-    var navbar: UINavigationBar!
-    var composeBar: UIView!
-    
-    let composeBarHeight:CGFloat = 70
-    
-    var composeTextField: UITextField!
-    var sendButton: UIButton!
-    
-    var chatView: UITableView!
-    
-    
-    var navbarBottom: CGFloat!
-    var textfieldOffset: CGFloat!
-    
-    var initialTableviewFrame: CGRect!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        initUI()
-        
-        FirebaseAPI.listenForChats { (msg) in
-            if !self.messages.contains(msg) {
-                self.messages.append(msg)
-            }
-            if msg.senderID != self.user.uid && self.chatView.numberOfRows(inSection: 0) != self.messages.count {
-                self.addMessage()
-            }
-        }
+        member = Member(name: "Anita S", color: UIColor(red:0.76, green:0.62, blue:0.95, alpha:1.0))
+        messagesCollectionView.messagesDataSource = self
+        messagesCollectionView.messagesLayoutDelegate = self
+        messageInputBar.delegate = self
+        messagesCollectionView.messagesDisplayDelegate = self as? MessagesDisplayDelegate
     }
     
 }
+

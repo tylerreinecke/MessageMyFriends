@@ -261,6 +261,8 @@ PODS:
   - GTMSessionFetcher/Core (1.2.1)
   - JGProgressHUD (2.0.3)
   - leveldb-library (1.20)
+  - MessageInputBar (0.4.1):
+    - MessageInputBar/Core (= 0.4.1)
   - MessageInputBar/Core (0.4.1)
   - MessageKit (2.0.0):
     - MessageInputBar/Core
@@ -291,6 +293,7 @@ DEPENDENCIES:
   - Firebase/DynamicLinks
   - Firebase/Storage
   - FirebaseUI
+  - MessageInputBar
   - MessageKit
 
 SPEC REPOS:
@@ -389,6 +392,6 @@ SPEC CHECKSUMS:
   TwitterCore: 8cbc9ad34d91c63a0035ea05bfbfc0d7ca72a28c
   TwitterKit: 5e4f41d70b9abdb41df5467f52d7aa2c0fd26ebb
 
-PODFILE CHECKSUM: 9bf2fb0ccf154c7cdab9581669a7dad37d78b7ca
+PODFILE CHECKSUM: 32529547fc9ee08cdf178b3a7cdc8bbf46b66e6b
 
 COCOAPODS: 1.6.0

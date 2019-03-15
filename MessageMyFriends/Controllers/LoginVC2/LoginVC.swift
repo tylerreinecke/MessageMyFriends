@@ -15,7 +15,6 @@ class LoginVC: UIViewController {
     var emailTextField: UITextField!
     
     var sendEmailButton: UIButton!
-    var signInButton: UIButton!
     
     
     var link: String!

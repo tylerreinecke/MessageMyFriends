@@ -19,7 +19,7 @@ extension LoginVC: UITextFieldDelegate {
         welcomeLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 400, height: 200))
         welcomeLabel.center = CGPoint(x: view.frame.midX, y: logoView.frame.maxY)
         welcomeLabel.textAlignment = .center
-        welcomeLabel.text = "Sign In"
+        welcomeLabel.text = "Message My Friends"
         welcomeLabel.font = UIFont.boldSystemFont(ofSize: 34.0)
         view.addSubview(welcomeLabel)
         
@@ -41,15 +41,6 @@ extension LoginVC: UITextFieldDelegate {
         sendEmailButton.setTitleColor(.white, for: .normal)
         sendEmailButton.addTarget(self, action: #selector(sendEmailPressed), for: .touchUpInside)
         view.addSubview(sendEmailButton)
-        
-        signInButton = UIButton(frame: CGRect(x: view.frame.width/3.5, y: sendEmailButton.frame.maxY + 50, width: view.frame.width/2, height: 30))
-        signInButton.setTitle("Sign In", for: .normal)
-        signInButton.center = CGPoint(x: view.frame.midX, y: sendEmailButton.frame.maxY + 20)
-        signInButton.backgroundColor = UIColor(red:0.57, green:0.70, blue:0.95, alpha:1.0)
-        signInButton.layer.cornerRadius = 12
-        signInButton.setTitleColor(.white, for: .normal)
-        //signInButton.addTarget(self, action: #selector(sendEmailButton), for: .touchUpInside)
-        view.addSubview(signInButton)
         
         addTapDismiss()
 
