@@ -6,5 +6,5 @@ Message My Friends is a chatting and location tracker app. Users will be able to
 # Screenshots
 ![](https://github.com/tylerreinecke/MessageMyFriends/blob/master/Screenshots/Login.png)
 ![](https://github.com/tylerreinecke/MessageMyFriends/blob/master/Screenshots/Home.png)
-![](https://github.com/tylerreinecke/MessageMyFriends/blob/master/Screenshots/Login.png)
+![](https://github.com/tylerreinecke/MessageMyFriends/blob/master/Screenshots/Chat.png)
 
